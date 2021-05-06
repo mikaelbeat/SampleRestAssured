@@ -12,7 +12,12 @@ public class Demo_test {
 	
     @Test
      public void test() {
-    	System.out.println("Tests!");
+    	System.out.println("From Demo test 1 - 1");
+    }
+    
+    @Test
+    public void test2() {
+    	System.out.println("From Demo test 1 - 2");
     }
 	
 	@AfterSuite
@@ -22,6 +27,3 @@ public class Demo_test {
 
 
 }
-
-
-// 4,29

@@ -1,26 +1,25 @@
-package skipping_test;
+package prioritise;
 
 import org.testng.annotations.*;
 
 
-public class Skip_demo {
+public class Prioritise {
 
     
-    @Test
+    @Test(priority = 3)
     public void test1() {
     	System.out.println("From Demo test 1");
     }
     
-    @Test (enabled = false)
+    @Test(priority = 2)
     public void test2() {
     	System.out.println("From Demo test 2");
     }
     
-    @Test
+    @Test(priority = 1)
     public void test3() {
     	System.out.println("From Demo test 3");
     }
-
 
 
 }

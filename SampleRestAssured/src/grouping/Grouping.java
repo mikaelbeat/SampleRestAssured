@@ -3,7 +3,7 @@ package grouping;
 import org.testng.annotations.*;
 
 
-public class Demo {
+public class Grouping {
 
     
     @Test(groups="Regression")

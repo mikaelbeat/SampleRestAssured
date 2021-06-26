@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test parameters">
+	<test thread-count="1" name="Test parameters via XML file">
+
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="userName" value="tester"></parameter>
+		<parameter name="password" value="12345"></parameter>
+
+		<classes>
+			<class name="parameterization.Annotation" />
+		</classes>
+
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

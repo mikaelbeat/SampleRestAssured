@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-28T21:12:02 EEST" name="Default suite" finished-at="2021-05-28T21:12:02 EEST" duration-ms="36">
+  <suite started-at="2021-06-26T20:03:27 EEST" name="Test parameters" finished-at="2021-06-26T20:03:27 EEST" duration-ms="35">
     <groups>
     </groups>
-    <test started-at="2021-05-28T21:12:02 EEST" name="Default test" finished-at="2021-05-28T21:12:02 EEST" duration-ms="36">
-      <class name="dependancy.Demo">
-        <test-method signature="test1()[pri:0, instance:dependancy.Demo@55536d9e]" started-at="2021-05-28T21:12:02 EEST" name="test1" finished-at="2021-05-28T21:12:02 EEST" duration-ms="5" status="PASS">
+    <test started-at="2021-06-26T20:03:27 EEST" name="Test parameters via XML file" finished-at="2021-06-26T20:03:27 EEST" duration-ms="35">
+      <class name="parameterization.Annotation">
+        <test-method signature="Test_case_one(java.lang.String)[pri:0, instance:parameterization.Annotation@747edf66]" started-at="2021-06-26T20:03:27 EEST" name="Test_case_one" finished-at="2021-06-26T20:03:27 EEST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test4()[pri:0, instance:dependancy.Demo@55536d9e]" started-at="2021-05-28T21:12:02 EEST" name="test4" finished-at="2021-05-28T21:12:02 EEST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test_case_one -->
+        <test-method signature="Test_case_two(java.lang.String, java.lang.String)[pri:0, instance:parameterization.Annotation@747edf66]" started-at="2021-06-26T20:03:27 EEST" name="Test_case_two" finished-at="2021-06-26T20:03:27 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method signature="test2()[pri:0, instance:dependancy.Demo@55536d9e]" started-at="2021-05-28T21:12:02 EEST" name="test2" finished-at="2021-05-28T21:12:02 EEST" depends-on-methods="dependancy.Demo.test1" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:dependancy.Demo@55536d9e]" started-at="2021-05-28T21:12:02 EEST" name="test3" finished-at="2021-05-28T21:12:02 EEST" depends-on-methods="dependancy.Demo.test2" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test5()[pri:0, instance:dependancy.Demo@55536d9e]" started-at="2021-05-28T21:12:02 EEST" name="test5" finished-at="2021-05-28T21:12:02 EEST" depends-on-methods="dependancy.Demo.test3, dependancy.Demo.test1" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- dependancy.Demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Test_case_two -->
+      </class> <!-- parameterization.Annotation -->
+    </test> <!-- Test parameters via XML file -->
+  </suite> <!-- Test parameters -->
 </testng-results>

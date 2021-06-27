@@ -1,40 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-26T20:03:27 EEST" name="Test parameters" finished-at="2021-06-26T20:03:27 EEST" duration-ms="35">
+  <suite started-at="2021-06-27T23:17:21 EEST" name="Data provider suite" finished-at="2021-06-27T23:17:22 EEST" duration-ms="86">
     <groups>
     </groups>
-    <test started-at="2021-06-26T20:03:27 EEST" name="Test parameters via XML file" finished-at="2021-06-26T20:03:27 EEST" duration-ms="35">
-      <class name="parameterization.Annotation">
-        <test-method signature="Test_case_one(java.lang.String)[pri:0, instance:parameterization.Annotation@747edf66]" started-at="2021-06-26T20:03:27 EEST" name="Test_case_one" finished-at="2021-06-26T20:03:27 EEST" duration-ms="6" status="PASS">
+    <test started-at="2021-06-27T23:17:21 EEST" name="Unit test" finished-at="2021-06-27T23:17:21 EEST" duration-ms="39">
+      <class name="dataprovider_parameterization.Dataprovider2">
+        <test-method signature="Scenario1(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario1" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Common data]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_case_one -->
-        <test-method signature="Test_case_two(java.lang.String, java.lang.String)[pri:0, instance:parameterization.Annotation@747edf66]" started-at="2021-06-26T20:03:27 EEST" name="Test_case_two" finished-at="2021-06-26T20:03:27 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- Scenario1 -->
+        <test-method signature="Scenario2(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario2" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
+                <![CDATA[Common data]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_case_two -->
-      </class> <!-- parameterization.Annotation -->
-    </test> <!-- Test parameters via XML file -->
-  </suite> <!-- Test parameters -->
+        </test-method> <!-- Scenario2 -->
+        <test-method signature="Scenario3(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario3" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Common data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario3 -->
+      </class> <!-- dataprovider_parameterization.Dataprovider2 -->
+    </test> <!-- Unit test -->
+    <test started-at="2021-06-27T23:17:22 EEST" name="IntergrationLevel" finished-at="2021-06-27T23:17:22 EEST" duration-ms="3">
+      <class name="dataprovider_parameterization.Dataprovider3">
+        <test-method signature="intergrationTest(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider3@1cbb87f3]" started-at="2021-06-27T23:17:22 EEST" name="intergrationTest" data-provider="TestType" finished-at="2021-06-27T23:17:22 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Common test data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intergrationTest -->
+      </class> <!-- dataprovider_parameterization.Dataprovider3 -->
+    </test> <!-- IntergrationLevel -->
+    <test started-at="2021-06-27T23:17:22 EEST" name="AcceptanceLevel" finished-at="2021-06-27T23:17:22 EEST" duration-ms="2">
+      <class name="dataprovider_parameterization.Dataprovider4">
+        <test-method signature="acceptanceTest(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider4@15bbf42f]" started-at="2021-06-27T23:17:22 EEST" name="acceptanceTest" data-provider="TestType" finished-at="2021-06-27T23:17:22 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acceptance test data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptanceTest -->
+      </class> <!-- dataprovider_parameterization.Dataprovider4 -->
+    </test> <!-- AcceptanceLevel -->
+  </suite> <!-- Data provider suite -->
 </testng-results>

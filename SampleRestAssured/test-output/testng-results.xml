@@ -1,76 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-27T23:17:21 EEST" name="Data provider suite" finished-at="2021-06-27T23:17:22 EEST" duration-ms="86">
+  <suite started-at="2021-06-29T16:12:45 EEST" name="TestNG Listener Suite" finished-at="2021-06-29T16:12:45 EEST" duration-ms="43">
     <groups>
     </groups>
-    <test started-at="2021-06-27T23:17:21 EEST" name="Unit test" finished-at="2021-06-27T23:17:21 EEST" duration-ms="39">
-      <class name="dataprovider_parameterization.Dataprovider2">
-        <test-method signature="Scenario1(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario1" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="4" status="PASS">
+    <test started-at="2021-06-29T16:12:45 EEST" name="Listener Test Case" finished-at="2021-06-29T16:12:45 EEST" duration-ms="43">
+      <class name="listeners.Tests">
+        <test-method signature="testFour()[pri:0, instance:listeners.Tests@2bfc268b]" started-at="2021-06-29T16:12:45 EEST" name="testFour" finished-at="2021-06-29T16:12:45 EEST" duration-ms="6" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException
+at listeners.Tests.testFour(Tests.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testGetData(java.lang.String)[pri:0, instance:listeners.Tests@2bfc268b]" started-at="2021-06-29T16:12:45 EEST" name="testGetData" data-provider="dataprovider" finished-at="2021-06-29T16:12:45 EEST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Common data]]>
+                <![CDATA[A]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scenario1 -->
-        <test-method signature="Scenario2(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario2" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- testGetData -->
+        <test-method signature="testGetData(java.lang.String)[pri:0, instance:listeners.Tests@2bfc268b]" started-at="2021-06-29T16:12:45 EEST" name="testGetData" data-provider="dataprovider" finished-at="2021-06-29T16:12:45 EEST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Common data]]>
+                <![CDATA[B]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scenario2 -->
-        <test-method signature="Scenario3(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider2@65f095f8]" started-at="2021-06-27T23:17:21 EEST" name="Scenario3" data-provider="scenarioData" finished-at="2021-06-27T23:17:21 EEST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Common data]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testGetData -->
+        <test-method signature="testOne()[pri:0, instance:listeners.Tests@2bfc268b]" started-at="2021-06-29T16:12:45 EEST" name="testOne" finished-at="2021-06-29T16:12:45 EEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scenario3 -->
-      </class> <!-- dataprovider_parameterization.Dataprovider2 -->
-    </test> <!-- Unit test -->
-    <test started-at="2021-06-27T23:17:22 EEST" name="IntergrationLevel" finished-at="2021-06-27T23:17:22 EEST" duration-ms="3">
-      <class name="dataprovider_parameterization.Dataprovider3">
-        <test-method signature="intergrationTest(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider3@1cbb87f3]" started-at="2021-06-27T23:17:22 EEST" name="intergrationTest" data-provider="TestType" finished-at="2021-06-27T23:17:22 EEST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Common test data]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testOne -->
+        <test-method signature="testThree()[pri:0, instance:listeners.Tests@2bfc268b]" started-at="2021-06-29T16:12:45 EEST" name="testThree" finished-at="2021-06-29T16:12:45 EEST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [7] but found [5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [7] but found [5]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at listeners.Tests.testThree(Tests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intergrationTest -->
-      </class> <!-- dataprovider_parameterization.Dataprovider3 -->
-    </test> <!-- IntergrationLevel -->
-    <test started-at="2021-06-27T23:17:22 EEST" name="AcceptanceLevel" finished-at="2021-06-27T23:17:22 EEST" duration-ms="2">
-      <class name="dataprovider_parameterization.Dataprovider4">
-        <test-method signature="acceptanceTest(java.lang.String)[pri:0, instance:dataprovider_parameterization.Dataprovider4@15bbf42f]" started-at="2021-06-27T23:17:22 EEST" name="acceptanceTest" data-provider="TestType" finished-at="2021-06-27T23:17:22 EEST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Acceptance test data]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acceptanceTest -->
-      </class> <!-- dataprovider_parameterization.Dataprovider4 -->
-    </test> <!-- AcceptanceLevel -->
-  </suite> <!-- Data provider suite -->
+        </test-method> <!-- testThree -->
+      </class> <!-- listeners.Tests -->
+    </test> <!-- Listener Test Case -->
+  </suite> <!-- TestNG Listener Suite -->
 </testng-results>

@@ -8,21 +8,45 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Test parameters</th></tr>
+<tr><td><a href="#t0">Test parameters via XML file</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5</td><td></td><td></td></tr>
+<tr><th colspan="8">Test case Grouping</th></tr>
+<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6</td><td>Smoke test, Sanity</td><td></td></tr>
 <tr><th colspan="8">TestNG Listener Suite</th></tr>
-<tr><td><a href="#t0">Listener Test Case</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">43</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Listener Test Case</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">11</td><td></td><td></td></tr>
+<tr><th colspan="8">Multiple test suites</th></tr>
+<tr><th colspan="8">Data provider suite</th></tr>
+<tr class="stripe"><td><a href="#t3">Unit test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32</td><td></td><td></td></tr>
+<tr><td><a href="#t4">IntergrationLevel</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">AcceptanceLevel</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">12</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">60</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestNG Listener Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Listener Test Case &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listeners.Tests</td><td><a href="#m0">testThree</a></td><td rowspan="1">1624972365082</td><td rowspan="1">2</td></tr><tr><th colspan="4">Listener Test Case &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">listeners.Tests</td><td><a href="#m1">testFour</a></td><td rowspan="1">1624972365067</td><td rowspan="1">6</td></tr><tr><th colspan="4">Listener Test Case &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">listeners.Tests</td><td><a href="#m2">testGetData</a></td><td rowspan="2">1624972365076</td><td rowspan="2">1</td></tr><tr class="passedeven"><td><a href="#m3">testGetData</a></td></tr><tr class="passedeven"><td><a href="#m4">testOne</a></td><td rowspan="1">1624972365080</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test parameters</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test parameters via XML file &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">parameterization.Annotation</td><td><a href="#m0">Test_case_one</a></td><td rowspan="1">1625046966214</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m1">Test_case_two</a></td><td rowspan="1">1625046966215</td><td rowspan="1">2</td></tr></tbody>
+<tbody><tr><th colspan="4">Test case Grouping</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">grouping.Grouping</td><td><a href="#m2">test4</a></td><td rowspan="1">1625046966181</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">test5</a></td><td rowspan="1">1625046966185</td><td rowspan="1">0</td></tr></tbody>
+<tbody><tr><th colspan="4">TestNG Listener Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Listener Test Case &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listeners.Tests</td><td><a href="#m4">testThree</a></td><td rowspan="1">1625046966199</td><td rowspan="1">2</td></tr><tr><th colspan="4">Listener Test Case &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">listeners.Tests</td><td><a href="#m5">testFour</a></td><td rowspan="1">1625046966193</td><td rowspan="1">0</td></tr><tr><th colspan="4">Listener Test Case &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">listeners.Tests</td><td><a href="#m6">testGetData</a></td><td rowspan="2">1625046966196</td><td rowspan="2">1</td></tr><tr class="passedeven"><td><a href="#m7">testGetData</a></td></tr><tr class="passedeven"><td><a href="#m8">testOne</a></td><td rowspan="1">1625046966198</td><td rowspan="1">0</td></tr></tbody>
+<tbody><tr><th colspan="4">Multiple test suites</th></tr></tbody><tbody><tr><th colspan="4">Data provider suite</th></tr></tbody><tbody id="t3"><tr><th colspan="4">Unit test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">dataprovider_parameterization.Dataprovider2</td><td><a href="#m9">Scenario1</a></td><td rowspan="1">1625046966109</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m10">Scenario2</a></td><td rowspan="1">1625046966116</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m11">Scenario3</a></td><td rowspan="1">1625046966118</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">IntergrationLevel &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dataprovider_parameterization.Dataprovider3</td><td><a href="#m12">intergrationTest</a></td><td rowspan="1">1625046966163</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">AcceptanceLevel &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dataprovider_parameterization.Dataprovider4</td><td><a href="#m13">acceptanceTest</a></td><td rowspan="1">1625046966172</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Listener Test Case</h2><h3 id="m0">listeners.Tests#testThree</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [7] but found [5]
+<h2>Test parameters via XML file</h2><h3 id="m0">parameterization.Annotation#Test_case_one</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">parameterization.Annotation#Test_case_two</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tester</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m2">grouping.Grouping#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">grouping.Grouping#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Listener Test Case</h2><h3 id="m4">listeners.Tests#testThree</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [7] but found [5]
 	at listeners.Tests.testThree(Tests.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">listeners.Tests#testFour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">listeners.Tests#testFour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException
 	at listeners.Tests.testFour(Tests.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">listeners.Tests#testGetData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>A</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">listeners.Tests#testGetData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>B</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">listeners.Tests#testOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">listeners.Tests#testGetData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>B</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">listeners.Tests#testGetData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>A</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">listeners.Tests#testOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Unit test</h2><h3 id="m9">dataprovider_parameterization.Dataprovider2#Scenario1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common data</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">dataprovider_parameterization.Dataprovider2#Scenario2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common data</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">dataprovider_parameterization.Dataprovider2#Scenario3</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common data</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>IntergrationLevel</h2><h3 id="m12">dataprovider_parameterization.Dataprovider3#intergrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common test data</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AcceptanceLevel</h2><h3 id="m13">dataprovider_parameterization.Dataprovider4#acceptanceTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Acceptance test data</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

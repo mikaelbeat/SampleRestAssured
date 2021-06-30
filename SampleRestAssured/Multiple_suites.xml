@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Multiple test suites">
+
+	<suite-files>
+		<suite-file path="Dataprovider.xml"></suite-file>
+		<suite-file path="Grouping.xml"></suite-file>
+		<suite-file path="Listener.xml"></suite-file>
+		<suite-file path="Parameters.xml"></suite-file>
+	</suite-files>
+
+</suite> <!-- Suite -->
